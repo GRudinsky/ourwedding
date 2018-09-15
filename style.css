@@ -14,7 +14,7 @@ nav {
   border: 1px solid black;
 } 
 .jumbotron {
-  display: flex;
+  display: block;
   flex-direction: column;
   max-width: 100%;
   height: auto;
@@ -22,7 +22,7 @@ nav {
   overflow: hidden;
 }
 .titleContainer {
-  display:flex;
+  display: flex;
   background-image: url("../images/R&G-66.jpg");
   background-repeat: no-repeat;
 	background-size: cover;
@@ -36,7 +36,7 @@ nav {
   margin: 0 auto;
 }
 
-.startButton a{
+.startButton a {
   font-size: 100%;
   font-family: 'Quicksand', sans-serif;
   color: white;
@@ -47,59 +47,78 @@ nav {
   top: 25%;
   left: 46%;
 }
-.creditsBar p{
+.creditsBar p {
   font-size: 66%;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   color: grey;
-  padding: 10px 10px 6px 10px;
+  padding: 10px;
 }
-.flex-grid {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  padding: 5px;
-  margin: 0 auto;
-}
-.col {
-  flex: 1;
-  max-width: 25%;
-  overflow: hidden;
-}
-.col img {
-  display: block;
-  padding: 4px;
-  width: 100%;
-}
-/* img:hover{
-    color: #424242;
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  opacity: 1;
-  transform: scale(2.00);
-  -ms-transform: scale(1.15); /* IE 9 */
-  -webkit-transform: scale(2.00); /* Safari and Chrome */
 
-} */
+}
+
 
  .mainContainer {
-  display:flex;
-  max-width: 800px;
+    display: flex;
+     flex-direction: row;
+     max-width: 100%;
      height: auto;
-     align-self: center;
+      margin: 0 auto;
 }
+/* 2 horizontal pics */
+.mainContainer .m2 {
+    max-width: 49.5%;
+}
+/* 4 vertical pics */
+.mainContainer .m4 {
+    max-width: 24.6%;
+}
+/* 2 vertical 1 horizontal pics */
+.mainContainer .vh3h {
+    max-width: 52.3%;
+}
+.mainContainer .vh3v {
+    max-width: 23.2%;
+}
+/* 3 vertical pics */
+.mainContainer .m3 {
+    max-width: 32.9%;
+}
+/* 1 vertical 1 horizontal pics */
+.mainContainer .vh2v {
+    max-width: 30.5%;
+}
+.mainContainer .vh2h {
+    max-width: 68.5%;
+}
+
+.mainContainer .m1 {
+    max-width: 100%;
+}
+
 .mainContainer img {
-  display: inline-block;
-  margin: 0 auto;
-  max-height: 400px;
-    max-width: auto;
+    flex: 1;
+    display: inline-block;
+    align-self: center;
+    margin: 0 auto;
+    height: auto;
 }
-.mainContainer .image {
-  display: block;
-  min-width: 25%;
-  height: auto;
-   margin: 0 auto;
-} 
+
+
+@media only screen and (max-width: 750px) {
+    .mainContainer .m1,
+    .mainContainer .m2,
+    .mainContainer .m3,
+    .mainContainer .m4,
+    .mainContainer .vh3h,
+    .mainContainer .vh3v,
+    .mainContainer .p3v,
+    .mainContainer .vh2v,
+    .mainContainer .vh2h {
+	    
+        display: block;
+        max-width: 95%;
+        margin-bottom: 5px;
+    }
+}
+
