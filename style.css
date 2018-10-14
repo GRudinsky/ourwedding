@@ -3,22 +3,26 @@ html {
   width: 100%;
   font-size: 16px;
 }
+
 body {
   width: 100%;
   margin: 0;
   overflow-x: hidden;
+  background: #FFFFFD;
 }
 
+/*
  div,
 nav {
   border: 1px solid black;
 } 
+*/
 .jumbotron {
   display: block;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
-  margin: 0 auto;
+  margin: 10px auto;
   overflow: hidden;
 }
 .titleContainer {
@@ -30,10 +34,8 @@ nav {
 	height: 670px;
 	background-position: center center;
 	position: relative;
-
     transition-delay: 1s; /*prevents the white screen while loading next image*/
-
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .startButton a {
@@ -44,59 +46,69 @@ nav {
   padding: 10px 30px 10px 30px;
   border: 1px solid white;
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 46%;
 }
-.creditsBar p {
-  font-size: 66%;
+.creditsBar,  
+    footer {
+  font-size: 70%;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   color: grey;
   padding: 10px;
+  margin: 0 1%;
+}
+.creditsBar {
+  border-bottom: 1.25px solid rgba(192,192,192,0.9);
+
+}
+footer {
+  border-top: 1.25px solid rgba(192,192,192,0.9);
+  padding-bottom: 30px;
 }
 
 }
 
-
- .mainContainer {
+ .picsContainer {
     display: flex;
      flex-direction: row;
      max-width: 100%;
      height: auto;
-      margin: 0 auto;
+     margin: 0 auto;
+     overflow: hidden;
 }
-/* 2 horizontal pics */
-.mainContainer .m2 {
-    max-width: 49.5%;
+/* 2 verical or horizontal pics */
+.picsContainer .m2 {
+    max-width: 49.7%;
 }
-/* 4 vertical pics */
-.mainContainer .m4 {
+/* 4 vertical or horizontal  pics */
+.picsContainer .m4 {
     max-width: 24.6%;
 }
 /* 2 vertical 1 horizontal pics */
-.mainContainer .vh3h {
-    max-width: 52.3%;
+.picsContainer .vh3h {
+    max-width: 52.35%;
 }
-.mainContainer .vh3v {
-    max-width: 23.2%;
+.picsContainer .vh3v {
+    max-width: 23.25%;
 }
-/* 3 vertical pics */
-.mainContainer .m3 {
-    max-width: 32.9%;
+/* 3 vertical or horizontal pics */
+.picsContainer .m3 {
+    max-width: 32.99%;
 }
 /* 1 vertical 1 horizontal pics */
-.mainContainer .vh2v {
-    max-width: 30.5%;
+.picsContainer .vh2v {
+    max-width: 30.57%;
 }
-.mainContainer .vh2h {
-    max-width: 68.5%;
+.picsContainer .vh2h {
+    max-width: 68.83%;
+}
+/* 1 vertical or horizontal pic */
+.picsContainer .m1 {
+    max-width: 99.8%;
 }
 
-.mainContainer .m1 {
-    max-width: 100%;
-}
-
-.mainContainer img {
+.picsContainer img {
     flex: 1;
     display: inline-block;
     align-self: center;
@@ -104,20 +116,42 @@ nav {
     height: auto;
 }
 
+img {
+    -webkit-filter: brightness(100%);
+}
 
-@media only screen and (max-width: 750px) {
-    .mainContainer .m1,
-    .mainContainer .m2,
-    .mainContainer .m3,
-    .mainContainer .m4,
-    .mainContainer .vh3h,
-    .mainContainer .vh3v,
-    .mainContainer .p3v,
-    .mainContainer .vh2v,
-    .mainContainer .vh2h {
-	    
+#grayscale {
+-webkit-filter: grayscale(100%)
+}
+
+/*
+#brighter {
+    -webkit-filter: contrast(85%);
+}
+*/
+
+img:hover {
+    -webkit-filter: brightness(90%);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+@media only screen and (max-width: 800px) {
+    .picsContainer .m1,
+    .picsContainer .m2,
+    .picsContainer .m3,
+    .picsContainer .m4,
+    .picsContainer .vh3h,
+    .picsContainer .vh3v,
+    .picsContainer .p3v,
+    .picsContainer .vh2v,
+    .picsContainer .vh2h {
+        
         display: block;
-        max-width: 95%;
+        max-width: 75%;
         margin-bottom: 5px;
     }
 }
