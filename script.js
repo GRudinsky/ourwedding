@@ -3,13 +3,16 @@
 function randomBackground() {
   // Add picture numbers in the array below
   var backgroundArray = [
-      "https://farm2.staticflickr.com/1886/43519261515_eb3414b80d_k.jpg",
       "https://farm2.staticflickr.com/1897/30559376378_0de0fcac2e_k.jpg",
-      "https://farm2.staticflickr.com/1863/30559335628_6ab4182380_k.jpg",
-      "https://farm2.staticflickr.com/1852/43710320594_b8b9020ab3_k.jpg",
       "https://farm2.staticflickr.com/1868/42618409120_adc50ff895_k.jpg",
-      "https://farm2.staticflickr.com/1881/44377909322_eb9495d9e3_k.jpg",
-      "https://farm2.staticflickr.com/1876/29489902147_92d8d9d6b6_k.jpg"
+      "https://farm2.staticflickr.com/1846/44377604372_1547b735b3_k.jpg",
+      "https://farm2.staticflickr.com/1885/44376988542_a62d38357f_k.jpg",
+      "https://farm2.staticflickr.com/1889/43518135015_b60c4f242e_k.jpg",
+      "https://farm2.staticflickr.com/1882/43517972525_d5ee925d5e_k.jpg",
+      "https://farm2.staticflickr.com/1853/43518031585_e90b2911ce_k.jpg",
+      "https://farm2.staticflickr.com/1843/43708653004_b5fd99c9b6_k.jpg",
+      "https://farm2.staticflickr.com/1876/43517598545_2e4951ae2a_k.jpg",
+      "https://farm2.staticflickr.com/1852/29487862537_1edd7bacf7_k.jpg"
                         ];
     
   var randomNumber = backgroundArray[Math.floor(Math.random() * backgroundArray.length)];
