@@ -60,7 +60,21 @@ nav {
 }
 .creditsBar {
   border-bottom: 1.25px solid rgba(192,192,192,0.9);
-
+}
+.buttonsidebar {
+    display: none; 
+/* otherwise display: block   */
+  font-size: 70%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  color: grey;
+    -webkit-transform: rotate(90deg);
+  padding: 10px 30px 10px 30px;
+  border: 1px solid grey;
+    position: fixed;
+    top: 300px;
+    left: -60px;
+    
 }
 footer {
   border-top: 1.25px solid rgba(192,192,192,0.9);
@@ -87,10 +101,10 @@ footer {
 }
 /* 2 vertical 1 horizontal pics */
 .picsContainer .vh3h {
-    max-width: 52.35%;
+    max-width: 52.39%;
 }
 .picsContainer .vh3v {
-    max-width: 23.25%;
+    max-width: 23.28%;
 }
 /* 3 vertical or horizontal pics */
 .picsContainer .m3 {
@@ -108,6 +122,15 @@ footer {
     max-width: 99.8%;
 }
 
+.picsContainer .vh2ph {
+    max-width: 66.3%;
+}
+
+.picsContainer .vh2pv {
+    max-width: 33.1%;
+}
+
+
 .picsContainer img {
     flex: 1;
     display: inline-block;
@@ -121,14 +144,9 @@ img {
 }
 
 #grayscale {
--webkit-filter: grayscale(100%)
+-webkit-filter: grayscale(100%);
 }
 
-/*
-#brighter {
-    -webkit-filter: contrast(85%);
-}
-*/
 
 img:hover {
     -webkit-filter: brightness(90%);
@@ -139,7 +157,7 @@ img:hover {
     transition: all 0.2s ease;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
     .picsContainer .m1,
     .picsContainer .m2,
     .picsContainer .m3,
