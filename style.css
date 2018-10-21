@@ -166,7 +166,10 @@ img:hover {
     .picsContainer .vh3v,
     .picsContainer .p3v,
     .picsContainer .vh2v,
-    .picsContainer .vh2h {
+    .picsContainer .vh2h,
+    .picsContainer .vh2ph,
+    .picsContainer .vh2pv
+	{
         
         display: block;
         max-width: 75%;
