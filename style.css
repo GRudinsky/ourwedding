@@ -157,7 +157,7 @@ img:hover {
     transition: all 0.2s ease;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 965px) {
     .picsContainer .m1,
     .picsContainer .m2,
     .picsContainer .m3,
