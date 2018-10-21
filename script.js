@@ -21,7 +21,7 @@ function randomBackground() {
  
     // Automatic slideshow
     
-  setTimeout(randomBackground, 10000);
+  setTimeout(randomBackground, 11000);
 
 }
 
