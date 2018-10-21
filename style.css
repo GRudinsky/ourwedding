@@ -101,14 +101,14 @@ footer {
 }
 /* 2 vertical 1 horizontal pics */
 .picsContainer .vh3h {
-    max-width: 52.39%;
+    max-width: 52.38%;
 }
 .picsContainer .vh3v {
-    max-width: 23.28%;
+    max-width: 23.27%;
 }
 /* 3 vertical or horizontal pics */
 .picsContainer .m3 {
-    max-width: 32.99%;
+    max-width: 32.97%;
 }
 /* 1 vertical 1 horizontal pics */
 .picsContainer .vh2v {
@@ -157,7 +157,7 @@ img:hover {
     transition: all 0.2s ease;
 }
 
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 950px) {
     .picsContainer .m1,
     .picsContainer .m2,
     .picsContainer .m3,
